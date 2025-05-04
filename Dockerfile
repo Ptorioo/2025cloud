@@ -13,7 +13,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Copy the Python code to the container
-COPY main.py /app/main.py
+COPY . .
 
 # Install Python dependencies
 RUN pip3 install --no-cache-dir -r requirements.txt
